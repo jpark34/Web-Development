@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Creates the Title</title>
+</head>
+
+<body>
+	<h1>Header 1 can only be used once</h1>
+	
+	<h2 id="ID"> ID</h2>
+		<p>link scrolls up to here</p>
+	
+	<h2>Header 2-6 can be used as often as I like</h2>
+		<p>p makes paragraphs</p>
+	
+	<h2>Headers 2-6 should always be used in order</h2>
+		<p>h4 is a subheading of h3 which is a subheading of h2</p>
+
+	<h3>Special things</h3>
+		<p>Use this for <em>italics</em></p>
+		<p>Use this for <strong>bold</strong> <br> br breaks the lines</p>
+	
+	<h2>Lists</h2>
+		<ul>
+			<li>ul is unordered list</li>
+			<li>ol is ordered list</li>
+			<li>li is a list item</li>
+			<li>
+				nested lists are possible
+				<ol>
+					<li>can</li>
+					<li>go on</li>
+					<li>forever</li>
+				</ol>
+			<li>nested list is ordered outside is unordered</li>
+		</ul>
+	
+	<h2>Links</h2>
+		<p>a is an anchor tag used to define a link <br>href is the destination of the link</p>
+		<p><a href="http://htmldog.com">HTMLDog</a></p>
+		<p>link to another part of the same page</p>
+		<p><a href="#ID">Go to ID</a></p>
+		
+	<h2>Images</h2>
+		<p>img tag used to put an image in an HTML document<br>
+		src attribrute tells the browser where to find the image<br>
+		width and height attributes are necessary to keep the picture from jumping around<br>
+		alt attribute is the alternative description to describe the picture</p>
+		<img src="http://www.htmldog.com/badge1.gif" width="120" height="90" alt="HTML Dog">
+		
+	<h2>Tables</h2>
+		<p>table element deines the table<br>
+		tr element defines a data row<br>
+		td element deines a data cell and must be enclosed in a tr tag</p>
+		<table>
+			<tr>
+				<td>Row 1, cell 1</td>
+				<td>Row 1, cell 2</td>
+				<td>Row 1, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 2, cell 1</td>
+				<td>Row 2, cell 2</td>
+				<td>Row 2, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 3, cell 1</td>
+				<td>Row 3, cell 2</td>
+				<td>Row 3, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 4, cell 1</td>
+				<td>Row 4, cell 2</td>
+				<td>Row 4, cell 3</td>
+			</tr>
+		</table>
+		
+	<h2>Forms</h2>
+		<p>forms are used to collect data inputted by a user<br>
+		can be used as an interface for a web app or to send data accross the web</P>
+		
+		<h3>form</h3>
+			<p>form defines the form<br>
+			action attribute is needed to tell the form where its contents will be sent to<br>
+			method attribute tells the form how the data in it is going to be sent<br>
+			value get is the default and latches form info onto a web address, or post, which invisibly sends the form's info</p>
+			<form action="processingscript.php" method="post">
+			</form>
+		
+		<h3>input</h3>
+			<p>has many different guises(look them up as needed)</p>
+			<input type="text">
+			<input type="submit">
+			<input type="checkbox">
+			<input type="password">
+			<input type="radio">
+			
+		<h3>textarea</h3>
+			<p>large multi-line textbox<br>
+			rows and cols are used to specify how big</p>
+			<textarea rows="5" cols="20">textbox</textarea>
+			
+		<h3>select</h3>
+			<p>select tag works with the option tag to make drop down boxes</p>
+			<select>
+				<option>Option 1</option>
+				<option>Option 2</option>
+				<option value="Option 3">Option 3</option>
+				<option selected> Option 4</option>
+			</select>
+			<p>can preselect options, example preselects option 4</p>
+			
+		<h3>names</h3>
+			<p>is added to all of the fields under the forms header in order to work with form handling scripts</p>
+			
+			<form action="somescript.php" method="post">
+				<p>Name:</p>
+				<p><input name="name" value="Your name"></p>
+
+				<p>Comments: </p>
+				<p><textarea rows="10" cols="20" name="comments">Your comments</textarea></p>
+
+				<p>Are you:</p>
+				<p><input type="radio" name="areyou" value="male"> Male</p>
+				<p><input type="radio" name="areyou" value="female"> Female</p>
+				<p><input type="radio" name="areyou" value="other" checked> Other</p>
+
+				<p><input type="submit"></p>
+
+			</form>
+</body>
+
+</html>
