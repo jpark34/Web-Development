@@ -1,0 +1,15 @@
+/* HTML selectors are names of HTML tags and are used to change the style of a specific type of element*/
+/* General Units: px - pixels, em - calculated size of a font, pt - points, % - percentages
+   Also: pc - picas, cm - centimeters, mm - milimeters, in - inches*/
+p {
+    color: red;
+}
+
+a {
+    color: blue;
+}
+
+body {
+    font-size: 14px;
+    color: purple;
+}
