@@ -17,10 +17,35 @@ h2 {
     background-color: #009;
 }
 
-p {
+#p1 {
     color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-transform: lowercase;
+    font-weight: bolder;
+}
+
+#ul1 {
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    text-decoration: overline;
 }
 
 a {
     color: blue;
+}
+
+p {
+    color: yellowgreen;
+}
+
+/* Shows how to make a bunch of changes to text */
+.s1 {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: center;
 }
