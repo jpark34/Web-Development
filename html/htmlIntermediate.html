@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Intermediate HTML Practice </title>
+    </head>
+
+    <body>
+        <p>Almost all of these things help with the style and formatting of a site. CSS is used to better format and style these tags.</p>
+
+        <h1> Intermediate HTML Practice </h1>
+
+        <h2> Span and Div </h2>
+        <p>
+            Span and div both apply no meaning to text but allow for useful changes when used with CSS.
+            <br> Span is in-line and used for a small chunk (Stays on the same line).
+            <br> Div is block-line and used to group larger chunks (Puts a br before and after).
+            <div id="div"> 
+                Here is <span class="span"> an example of using span </span> that is inside of div.
+            </div>
+            Only use span and div if there aren't any sensible alternatives.
+        </p>
+
+        <h2> Abbreviations, Quotations, and Code </h2>
+            <h3> Abbreviations </h3>
+            <p>
+                Used to make an abbreviation of a word or phrase. Such as:
+                <ul>
+                    <li> <abbr title="Hypertext Markup Language">HTML</abbr></li>
+                    <li> <abbr title="Cascading Style Sheets">CSS</abbr></li>
+                </ul>
+            </p>
+            <h3> Quotations </h3>
+            <p>
+                <blockquote cite="https://www.htmldog.com">
+                    <p>
+                        Blockquote is normally used for standalone, often multi-line quotes.
+                    </p>
+                </blockquote>
+            </p>
+            <p>
+                Normal quotes are done with q. <q> q is used for shorter, in-line quotes.</q>
+            </p>
+            <h3> Citations </h3>
+            <p> The cite tag can be used to define the title of a <cite>work</cite> just like that.</p>
+            <h3> Code </h3>
+            <p>
+                You can add <code>code</code> by doing <code><var>thisIsAVariable</var> = true;</code>
+                <br> For keyboard input <kbd>useThis</kbd>
+                <br> For output <samp>useThis</samp>
+            </p>
+            <h3> Preformatted Text </h3>
+            <p>
+                Used when spacing, like indentations, are relevant. Most commonly used for blocks of code.
+            </p>
+            <p>
+                <pre><code>
+                    &lt;div id="intro"&gt;
+                        &lt;h1&gt;Some heading&lt;/h1&gt;
+                        &lt;p&gt;Some paragraph paragraph thing thing thingy.&lt;/p&gt;
+                    &lt;/div&gt;
+                </code></pre>
+            </p>
+
+        <h2> Meta Tags </h2>
+        <p>
+            One of the meta tags can be used as many times as needed in the head element.
+            They contain the attributes charset, name, http-equiv, and content.
+            When name or http-equiv are used, the content attribute is used with them to apply the meta data itself.
+        </p>
+
+        <h2> Tables: Rowspan and Colspan </h2>
+        This code shows to to span over multiple rows and columns. Also shows how to create header cells.
+        <table>
+            <tr>
+                <th>Column 1 heading</th>
+                <th>Column 2 heading</th>
+                <th>Column 3 heading</th>
+            </tr>
+            <tr>
+                <td>Row 2, cell 1</td>
+                <td colspan="2">Row2, cell 2, also spanning Row 2, cell 3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Row 3, cell 1, also spanning Row 4, cell 1</td>
+                <td>Row 3, cell 2</td>
+                <td>Row 3, cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 4, cell 2</td>
+                <td>Row 4, cell 3</td>
+            </tr>
+        </table>
+
+        <h2> Description Lists </h2>
+        <dl>
+            <dt>Use dl to start off the list</dt>
+            <dt>Use dt to make the terms</dt>
+                <dd>Use dd to give descriptions for the terms</dd>
+                <dd>You can add as many or as little dd as you want to a dt</dd>
+        </dl>
+
+        <h2> Text: Addresses, Definitions, Bi-Directional, and Editorial </h2>
+            <h3>Addresses</h3>
+            <address>
+                <ul>
+                    <li>123-456-7890</li>
+                    <li>Addresses should be used for contact details</li>
+                </ul>
+            </address>
+            <h3>Definition Terms</h3>
+            <p>
+                The <dfn title="tag">definition</dfn> tag is used to highlight the first use of a term.
+                Very similar to the abbr tag.
+            </p>
+            <h3>Bi-Directional Text</h3>
+            <p>
+                Used to reverse the direction of the text, or to display language meant to be read right to left.
+                <br>Left to right. <bdo dir="ltr">god</bdo>
+                <br>Right to left. <bdo dir="rtl">god</bdo>
+            </p>
+            <h3>Editorial</h3>
+            <p>
+                Allows you to insert or delete text or other things.You can <del datetime="2021-28-5">delete</del>
+                or you can <ins>insert</ins> things. They make markings like the track changes feature in Word.
+            </p>
+        
+        <h2> Sectioning </h2>
+        <p>
+            Sectioning involves a handful of tags that can be used to define specific parts of
+            a page, such as articles, headers, footers, and navigation.
+        </p>
+            <h3>Articles and Sections</h3>
+            <p>
+                An article is used to mark up a standalone section of content.
+                A section represents a more general section and can split up an article.
+            </p>
+            <article>
+                <section id="intro">
+                    <p>[An Intro]</p>
+                </section>
+                <section id="main_content">
+                    <p>[Content]</p>
+                </section>
+                <section id="related">
+                    <ul>
+                        <li><a href="https://htmldog.com">HTMLDog</a></li>
+                    </ul>
+                </section>
+            </article>
+            <h3>Headers and Footers</h3>
+            <article>
+                <header>
+                    <h1>Header&hellip;</h1>
+                    <p>Header Guy</p>
+                </header>
+                <section id="Content">
+                    <p>[Content]</p>
+                </section>
+                <footer>
+                    <p>[Footer of the Article]</p>
+                </footer>
+            </article>
+            <footer>
+                <p>[Footer of the Page]</p>
+            </footer>
+            <h3> Asides and Figures </h3>
+            <section id="main">
+                <h1>Aside</h1>
+                <p>Used to represent content that is related to the content surrounding it.</p>
+                <aside>
+                    <h2>Stuff</h2>
+                    <p>Info about the aside tag.</p>
+                </aside>
+                <p>More info about the aside tag.</p>
+                <figure>
+                    <img src="/Web-Development/html/fouronetwo.jpg" width="150" height="150">
+                    <figcaption>Shop 412</figcaption>
+                </figure>
+            </section>
+            <h3>Navigation</h3>
+            <p>Nav is used to mark up a group of navigation links, in-line or not.</p>
+            <nav id="main_nav">
+                <ul>
+                    <li><a href="#intro">To intro</a></li>
+                    <li><a href="#Content">To Content</a></li>
+                    <li><a href="#related">To related</a></li>
+                </ul>
+            </nav>
+
+    </body>
+</html>
