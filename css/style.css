@@ -32,6 +32,36 @@ h2 {
     text-decoration: overline;
 }
 
+#table1 {
+    color: turquoise;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-indent: 2em;
+    word-spacing: 1em;
+    text-align: justify;
+    letter-spacing: 0.5em;
+    font-weight: 200;
+}
+
+#listHeader {
+    font-size: 1.5em;
+    background-color: #ccc;
+    margin: 20px;
+    padding: 40px;
+}
+
+h2 {
+    border-style: dashed;
+    border-color: red;
+    border-width: 3px;
+    border-left-width: 10px;
+    border-right-width: 7px;
+    border-left-color: blueviolet;
+    border-bottom-style: solid;
+    border-right-style: groove;
+    border-right-color: green;
+    border-left-style: double;
+}
+
 a {
     color: blue;
 }
