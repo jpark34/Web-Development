@@ -30,6 +30,49 @@
             </dl>
 
         <h2>Tables: Columns, Headers, and Footers</h2>
-            <h3>Columns</h3>
+            <h3>Columns, Caption, Header, Footer</h3>
+            <p>
+                The colgroup tag is used to help style the table with the use of CSS. You can give each column a class
+                and use that class in CSS to style just that column.<br>
+                You can use the span tag if you want multiple columns to look the same. (Don't use a col tag for the 
+                columns that the span is including.)<br>
+                The caption tag is always used at the beginning of the table. CSS caption-side: left, right, or bottom
+                will move it where you would expect.<br>
+                The thead, tfoot, tbody tags allow you to separate the table into header, footer, and body parts.
+            </p>
+            <table>
+                <caption>Table for Advanced Tables</caption>
+                <thead>
+                    <tr>
+                        <td> Header 1 </td>
+                        <td> Header 2 </td>
+                        <td> Header 3 </td>
+                    </tr>
+                </thead>
+                <colgroup>
+                    <col>
+                    <col class="alternative">
+                    <col span="2" class="alt2">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td> Body 1 </td>
+                        <td> Body 2 </td>
+                        <td> Body 3 </td>
+                    </tr>
+                    <tr>
+                        <td> Body 4 </td>
+                        <td> Body 5 </td>
+                        <td> Body 6 </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td> Footer 1 </td>
+                        <td> Footer 2 </td>
+                        <td> Footer 3 </td>
+                    </tr>
+                </tfoot>
+            </table>
     </body>
 </html>
