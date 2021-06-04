@@ -7,7 +7,7 @@
     
     <body>
         <h1>Advanced HTML Practice</h1>
-        <a href="#links">Skip to Links</a>
+        <a href="#links">Skip to Accessible Links</a>
         <p>More advanced aspects of HTML5.</p>
 
         <h2>Text: Time and Mark</h2>
@@ -99,6 +99,99 @@
                     </ul>
                 </section>
             </dl>
+
         <h2>Accessible Forms</h2>
+            <dl>
+                <dd><h3>Labels, Fieldsets, Legends, Option Groups, and Field Navigation</h3></dd>
+                <dl>
+                    <dd><ul>
+                        <li>Labels allow you to name your forms to be more specific.</li>
+                        <li>Fieldset can be used to group forms together.</li>
+                        <li>Use the legend tag to set a caption for the fieldset.</li>
+                        <li>Option groups is for grouping options within a select box.</li>
+                        <li>One can anvigate through fields using tabs and access keys just like with links.</li>
+                    </ul></dd>
+                </dl>
+            </dl>
+            <form action="processingscript.php" method="post">
+                <label for="yourName">Enter your Name</label>
+                <p><input name="name" value="Your Name"></p>
+                <p><input type="submit"></p>
+            </form>
+            <form action="somescript.php" method="post">
+                <fieldset>
+                    <legend name="name" accesskey="f" tabindex="4">Name</legend>
+                    <p>First Name <input name="firstName"></p>
+                    <p>Last Name <input name="lastName"></p>
+                </fieldset>
+            </form>
+            <select name="country">
+                <optgroup label="North America">
+                    <option value="can">Canada</option>
+                    <option value="mex">Mexico</option>
+                    <option value="usa">USA</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="fra">France</option>
+                    <option value="eng">England</option>
+                    <option value="ital">Italy</option>
+                </optgroup>
+            </select>
+
+        <h2>HTML5 Forms: Input Types, Attributes, and Data Lists</h2>
+            <dl>
+                <dd>These may not work on some browswers.</dd>
+                <dd><h3>Input Types</h3></dd>
+                <dd><h4>Search, Telephone, URL, Email, Numbers, Ranges, Dates, Times, and Color</h4></dd>
+                <dl>
+                    <dd><ul>
+                        <li>Search is mostly used as a CSS style but also for a search query text box.</li>
+                        <li>Can also use these attributes to do the same thing:</li>
+                        <ul>
+                            <li>tel - Phone Numbers</li>
+                            <li>url - Web Addresses</li>
+                            <li>email - Email Addresses</li>
+                        </ul>
+                        <li>In CSS use the valid/invalid pseudo classes to style these fields based off if they are written correctly.</li>
+                        <li>"Number" and "step" types can be used to cycle through numbers in a text box.</li>
+                        <li>They can also have min and max values. CSS valid and invalid are able to be used.</li>
+                        <li>You can also set the type to "datetime", "date", "month", "week", "time", and "datetime-local"</li>
+                        <li>If you want to do color through HTML and not CSS set type to "color" with a 6 digit hex representation of the color.</li>
+                    </ul></dd>
+                </dl>
+            </dl>
+            <p><input type="search" name="search">Search</p>
+            <p><input type="tel" name="telephone_number">Phone</p>
+            <p><input type="url" name="web_address">url</p>
+            <p><input type="email" name="email_address">Email</p>
+            <p><input type="number" name="quantity" step="2" min="10" max="20">Number with step, min, max</p>
+            <p><input type="range" name="temperature" step="0.5" min="30" max="100" value="40.5">Range</p>
+            <p><input type="color" name="color" value="#ff8800"></p>
+            <dl>
+                <dd><h3>Attributes and Data Lists</h3></dd>
+                <dd><h4>Placeholder Text, Autofocus, Data Lists</h4></dd>
+                <dl>
+                    <dd><ul>
+                        <li>The placeholder attribute is meant to be used as a hint for what is to be submitted with the form.</li>
+                        <li>Use autofocus to focus on a specific place when the web page is first opened.</li>
+                        <li>Data lists will show suggestions to the user as they type their input.</li>
+                    </ul></dd>
+                </dl>
+            </dl>
+            <p>
+                <label for="email_address">Email Address</label>
+                <input type="email" placeholder="you@somewhere.com" name="email_address" id="email_address" autofocus>
+            </p>
+            <p>
+                <input name="country" list="country_name">
+                <datalist id="country_name">
+                    <option value="USA"></option>
+                    <option value="Canada"></option>
+                    <option value="Russia"></option>
+                    <option value="France"></option>
+                </datalist>
+            </p>
+
+        <h2>Embedded Content: Video, Audio, and Canvas</h2>
     </body>
 </html>
