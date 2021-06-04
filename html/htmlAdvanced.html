@@ -7,6 +7,7 @@
     
     <body>
         <h1>Advanced HTML Practice</h1>
+        <a href="#links">Skip to Links</a>
         <p>More advanced aspects of HTML5.</p>
 
         <h2>Text: Time and Mark</h2>
@@ -31,15 +32,15 @@
 
         <h2>Tables: Columns, Headers, and Footers</h2>
             <h3>Columns, Caption, Header, Footer</h3>
-            <p>
-                The colgroup tag is used to help style the table with the use of CSS. You can give each column a class
-                and use that class in CSS to style just that column.<br>
-                You can use the span tag if you want multiple columns to look the same. (Don't use a col tag for the 
-                columns that the span is including.)<br>
-                The caption tag is always used at the beginning of the table. CSS caption-side: left, right, or bottom
-                will move it where you would expect.<br>
-                The thead, tfoot, tbody tags allow you to separate the table into header, footer, and body parts.
-            </p>
+            <dl>
+                <dd>The colgroup tag is used to help style the table with the use of CSS. You can give each column a class
+                    and use that class in CSS to style just that column.</dd>
+                <dd>You can use the span tag if you want multiple columns to look the same. (Don't use a col tag for the 
+                    columns that the span is including.)</dd>
+                <dd>The caption tag is always used at the beginning of the table. CSS caption-side: left, right, or bottom
+                    will move it where you would expect.</dd>
+                <dd>The thead, tfoot, tbody tags allow you to separate the table into header, footer, and body parts.</dd>
+            </dl>
             <table>
                 <caption>Table for Advanced Tables</caption>
                 <thead>
@@ -74,5 +75,30 @@
                     </tr>
                 </tfoot>
             </table>
+
+        <h2>Accessible Links</h2>
+            <p>Making Links More Accessible to Those With Disabilities</p>
+            <dl>
+                <dd><h3>Tabbing, Link Titles, Accesskeys, and Skipping HTML</h3></dd>
+                <dl>
+                    <dd><ul>
+                        <li>Used to assist those who do not or cannot use a pointing device.</li>
+                        <li>Links can be in any order but should be in logical order.</li>
+                        <li>Example is not in a logical order just a way of showing you can put them in any order.</li>
+                        <li>Also make sure to write good link text to describe the link.</li>
+                        <li>Hover over three.html to see the link title.</li>
+                        <li>Accesskeys allow for keyboard shortcuts to open up certain links. (Type CTRL + accesskey)</li>
+                        <li>You can create links that allow users to jump around the web page.</li>
+                    </ul></dd>
+                </dl>
+                <section id="links">
+                    <ul>
+                        <li><a href="one.html" tabindex="1">One</a></li>
+                        <li><a href="two.html" accesskey="s" tabindex="3">Two</a></li>
+                        <li><a href="three.html" title="If the link doesn't have a helpful title give it one" tabindex="2">Three</a></li>
+                    </ul>
+                </section>
+            </dl>
+        <h2>Accessible Forms</h2>
     </body>
 </html>
