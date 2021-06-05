@@ -193,5 +193,33 @@
             </p>
 
         <h2>Embedded Content: Video, Audio, and Canvas</h2>
+        <dl>
+            <dd><h3>Video</h3></dd>
+            <dd><video src="cats.mp4" controls width="50" height="100"></video></dd>
+            <dd><video src="dogs.mp4" autoplay muted loop></video></dd>
+            <dd><p>The video tag is used to put a video onto the web page. Along with some other attributes to help the user.</p></dd>
+            <dd><h3>Poster</h3></dd>
+            <dd><p>The poster attribute is used to display an image before the video is played.</p></dd>
+            <dd><video src="fish.mp4" poster="fish.jpg"></video></dd>
+            <dd><h3>Fallback Content</h3></dd>
+            <dd><p>Adds something that will take over in place of the video if the video isn't displayed correctly.</p></dd>
+            <dd><video src="snake.mp4" controls>
+                <img src="fouronetwo.jpg" alt="Picture of Shop 412.">
+            </video></dd>
+            <dd><h3>Alternative Content</h3></dd>
+            <dd><p>Use the source tag to offer multiple versions of a video. The broswer will choose the first one that it can properly display.</p></dd>
+            <dd><video controls>
+                <source src="bear.mp4" type="video/mp4; codecs='avc1, mp4a'">
+                <source src="bear.webm" type="video/webm; codecs='vp8.0, vorbis'">
+            </video></dd>
+            <dd><h3>Audio</h3></dd>
+            <dd><p>The audio tag is used to put audio on the web page. The same attributes apply to it as do the video tag.</p></dd>
+            <dd><p>Alternative content can also be applied to it the same way as video and source tags.</p></dd>
+            <dd><audio src="song.mp3" controls autoplay></audio></dd>
+            <dd><h3>Canvas</h3></dd>
+            <dd><p>The canvas tag is used to provide a canvas for which JavaScript can be used to add a multitude of things on top of.</p></dd>
+            <dd><p>Can also add in fallback and alternative content to this.</p></dd>
+            <dd><canvas id="painting" width="300" height="300"></canvas></dd>
+        </dl>
     </body>
 </html>
