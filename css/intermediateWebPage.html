@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Web Page for Intermediate CSS Practice</title>
+        <title>CSS Intermediate Practice</title>
         <link rel="stylesheet" href="intermediate.css">
     </head>
 
@@ -10,12 +10,20 @@
         <h1>CSS Intermediate Web Page</h1>
 
         <h2>Class and ID and Selectors</h2>
-        <dl>
-            <dd><p>Selectors come in 3 forms: HTML Tag, class, and ID. Class and ID allow you to define your own 
+        <dl id="list">
+            <dd><p class="data">Selectors come in 3 forms: HTML Tag, class, and ID. Class and ID allow you to define your own 
             selectors. This allows you to have the same HTML element presented differently from its counterparts.
             <br>In CSS the class selector is preceded by a full stop "." then the class name. 
-            While an ID selector is preceded by a "#".</dd></dd>
+            While an ID selector is preceded by a "#".</p></dd>
+            <dd><p class="data">In CSS you can also apply a selector to a specific HTML element by doing element.class or element.id.</p>
+            <p class="other">For example p.list will only be applied to paragraph elements within the list class.</p></dd>
+        </dl>
 
+        <h2>Grouping and Nesting</h2>
+        <dl id="groupnest">
+            <dd><p>Two ways to simplify HTML and CSS while also making it easier to manage</p></dd>
+            <dd>Grouping allows for you to combine multiple selectors under one group and give each selector the attributes within it.</dd>
+            <dd><p>Nesting allows you to specify properties to selectors within other selectors.</p></dd>
         </dl>
     </body>
 </html>

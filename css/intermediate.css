@@ -1,0 +1,24 @@
+/*Shows how to use Class and ID selectors*/
+#list {
+    background-color: blue;
+}
+
+.data {
+    font-style: italic;
+}
+
+p.other{
+    background-color: white;
+}
+
+/*Shows how to simplify code by grouping and nesting*/
+/*This is a group. Everything inside of the curly braces will be applied to all selectors.*/
+.data, p.other {
+    color: red;
+    font-weight: bold;
+}
+
+/*Nesting removes the need for excessive amounts of classes and IDs by saying apply this to the p tags inside of the list.*/
+#groupnest p{
+    font-weight: bolder;
+}
