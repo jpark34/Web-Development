@@ -1,4 +1,4 @@
-/*Shows how to use Class and ID selectors*/
+/*Demonstrates how to use Class and ID selectors*/
 #list {
     background-color: blue;
 }
@@ -11,7 +11,7 @@ p.other{
     background-color: white;
 }
 
-/*Shows how to simplify code by grouping and nesting*/
+/*Demonstrates how to simplify code by grouping and nesting*/
 /*This is a group. Everything inside of the curly braces will be applied to all selectors.*/
 .data, p.other {
     color: red;
@@ -21,4 +21,37 @@ p.other{
 /*Nesting removes the need for excessive amounts of classes and IDs by saying apply this to the p tags inside of the list.*/
 #groupnest p{
     font-weight: bolder;
+    text-decoration: underline;
+}
+
+#groupnest dd {
+    color: blue;
+}
+
+/*Demonstrates how to use a Psuedo Class for Links*/
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: yellow;
+}
+
+a:focus {
+    background-color: green;
+}
+
+/*First-child class example*/
+li:first-child {
+    font-weight: bold;
+    color: aqua;
 }
