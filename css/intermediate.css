@@ -55,3 +55,15 @@ li:first-child {
     font-weight: bold;
     color: aqua;
 }
+
+/*Demonstrates the shorthanded version of margin and padding*/
+#shorthand {
+    margin: 1px 5px 10px 20px;
+    padding: 1em 10em;
+}
+
+/*Demonstrates the shorthanded version of borders and fonts*/
+#borderfont {
+    border: 1px red solid;
+    font: italic bold 1em "courier";
+}
