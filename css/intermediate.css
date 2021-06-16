@@ -67,3 +67,8 @@ li:first-child {
     border: 1px red solid;
     font: italic bold 1em "courier";
 }
+
+/*Demonstrates how to use the background shorthand property*/
+body {
+    background: white url(http://www.htmldog.com/images/bg.gif) no-repeat top right;
+}
