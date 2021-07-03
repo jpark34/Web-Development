@@ -72,3 +72,27 @@ li:first-child {
 body {
     background: white url(http://www.htmldog.com/images/bg.gif) no-repeat top right;
 }
+
+/*Demonstrates certain specificity aspects*/
+#specific {
+    color: red;
+}
+
+#specific {
+    color: blue;
+}
+
+/*Demonstrates the use of the display property*/
+#inline {
+    display: inline;
+}
+
+#block {
+    display: block;
+}
+
+#none {
+    display: none;
+}
+
+/*Demonstrates use of */

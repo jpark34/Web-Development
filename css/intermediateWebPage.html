@@ -83,7 +83,51 @@
 
         <h2>Specificity</h2>
         <dl id="specificity">
-            <dd></dd>
+            <dd><p id="specific">For when you have two or more conflicting CSS rules that point to the same element. <div>There are some basic rules that the browser will follow to figure out which one will win out.</div></p></dd>
+            <ul>
+                <li>More Specific = Greater Precedence</li>
+                <ul>
+                    <li>If the selectors are the same the last one will be used.</li>
+                </ul>
+                <li>Calculating Specificity</li>
+                <ul>
+                    <li>ID Selector (#something) is a value of 100</li>
+                    <li>Class Selector (.something) is a value of 10</li>
+                    <li>HTML Selector (something) is a value of 1</li>
+                    <li>Add these up and you get a specific value for that peice of code.</li>
+                    <li>The higher the number the more specific it is and therefore the more often it will win out.</li>
+                </ul>
+            </ul>
+        </dl>
+
+        <h2>Display</h2>
+        <dl id="display">
+            <dd>Display Types</dd>
+            <dd>Inline, Block, None -> can be used with the display property.</dd>
+            <ul>
+                <li>Inline</li>
+                <ul id="inline">
+                    <li>Put</li>
+                    <li>Things</li>
+                    <li>Inline</li>
+                </ul>
+                <li>Block</li>
+                <ul id="block">
+                    <li>Makes a box standalone and fit the entire width of its containing box.</li>
+                    <li>Allows for greater manipulation of height, margins, and padding.</li>
+                </ul>
+                <li>None</li>
+                <ul id="none">
+                    <li>Doesn't display a box at all.</li>
+                    <li>Useful with dynamic effects.</li>
+                </ul>
+            </ul>
+            <dd>Some other display types have to do with tables or list-item or run-in.</dd>
+        </dl>
+
+        <h2>Pseudo Elements</h2>
+        <dl id="pseudo">
+            
         </dl>
     </body>
 </html>
