@@ -1,2 +1,3 @@
 # Web-Development
-Contains some practice web development code in HTML, CSS, and JavaScript. Practice is from the website https://htmldog.com/.
+
+HTML, CSS, JavaScipt folders contain practice files and code from the website https://htmldog.com/. I wanted to learn about how to make websites and give myself an introduction to some of the things that a front end developer would be doing.
