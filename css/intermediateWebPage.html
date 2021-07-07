@@ -127,7 +127,34 @@
 
         <h2>Pseudo Elements</h2>
         <dl id="pseudo">
-            
+            <dd>Work in the same way as pseudo classes.</dd>
+            <p><mark>First-letter and first-line.</mark> Apply to the first letter inside of a box and the top most displayed line in a box.</p>
+            <dd><p><mark>Before and after content.</mark> Used with the content property to place content on either side of a box without touching the HTML.</p></dd>
+            <dd><p>The value of the content property can be <mark>open-quote, close-quote, any string enclosed in quotation marks, or any image.</mark></p></dd>
+            <dd><p>
+                <blockquote cite="https://www.htmldog.com">
+                    <p>
+                        Blockquote is normally used for standalone, often multi-line quotes.
+                    </p>
+                </blockquote>
+            </p></dd>
+        </dl>
+
+        <h2>Page Layout</h2>
+        <dl id="layout">
+            <dd>Page layout with CSS is just moving a chunk of the page wherever you want.</dd>
+            <ul>
+                <li>Can be absolute or relative to another chunk.</li>
+            </ul>
+            <h3>Positioning</h3>
+            <ul>
+                <li>Position property is used to define whether a box is absolute, relative, static, or fixed.</li>
+                <li id="static">Static - default value, renders a box normally as they appear in HTML.</li>
+                <li id="relative">Relative - like static but the box xan be offset with the top,right,bottom,left properties.</li>
+                <li id="absolute">Absolute - allows for the box to be moved anywhere on the page using top,right,bottom,left properties.</li>
+                <li id="fixed">Fixed - behaves like absolute, but will stay in that position when the page is scrolled down.</li>
+
+            </ul>
         </dl>
     </body>
 </html>

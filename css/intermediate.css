@@ -95,4 +95,35 @@ body {
     display: none;
 }
 
-/*Demonstrates use of */
+/*Demonstrates use of Pseudo Elements
+  Form:
+    selector::pseudoelement { property: value; }
+
+    *add a second colon in order to differentiate a pseudo element from a pseudo class
+*/
+p::first-letter {
+    font-size: 24px;
+    float: left;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+dd::before {
+    content: "POW!";
+    background: red;
+    color: blue;
+}
+
+p::before {
+    content: url(image);
+}
