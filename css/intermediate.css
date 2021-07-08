@@ -127,3 +127,39 @@ dd::before {
 p::before {
     content: url(image);
 }
+
+/*Demonstrates how to use positioning to format a site*/
+#relative {
+    position: relative;
+}
+
+#static {
+    position: static;
+}
+
+#absolute {
+    position: absolute;
+}
+
+#fixed {
+    position: fixed;
+}
+
+/*Demonstrates how to layout columns without positioning*/
+#column1 {
+    position: absolute;
+    left: 0;
+    width: 200px;
+}
+
+#column2 {
+    margin-left: 200px;
+}
+
+/*Demonstrates how to float a box - moving a box and having content around it*/
+#float {
+    float: left;
+    width: 100px;
+    background-color: blue;
+    color: white;
+}
